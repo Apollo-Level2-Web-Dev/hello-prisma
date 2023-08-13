@@ -1,4 +1,4 @@
-import { PrismaClient, Profile, User } from "@prisma/client";
+import { Prisma, PrismaClient, Profile, User } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
@@ -25,6 +25,7 @@ const insertOrUpdateProfile = async (data: Profile): Promise<Profile> => {
                 bio: data.bio
             }
         })
+
         return result;
     }
 
@@ -35,17 +36,20 @@ const insertOrUpdateProfile = async (data: Profile): Promise<Profile> => {
 }
 
 const getUsers = async () => {
-    const result = await prisma.user.findMany({
-        // select: {
-        //     email: true,
-        //     name: true
-        // }
-        include: {
-            profile: true
-        }
-    });
+    // const result = await prisma.user.findMany({
+    //     // select: {
+    //     //     email: true,
+    //     //     name: true
+    //     // }
+    //     include: {
+    //         profile: true
+    //     }
+    // });
+
+    const result = await prisma.$queryRaw`select * from users`
     return result;
 }
+
 
 const getSingleUser = async (id: number) => {
     const result = await prisma.user.findUnique({

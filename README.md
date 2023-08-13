@@ -4,3 +4,16 @@ Prisma is an open-source database toolkit that simplifies database access and ma
 
 ## ER Diagram
 <img src="https://i.ibb.co/QjjrGmh/er-diagram.png" alt="ER Diagram"></img>
+
+## Important Links
+
+- [Prisma Docs](https://www.prisma.io/docs)
+- [Data Model](https://www.prisma.io/docs/concepts/components/prisma-schema/data-model)
+- [CRUD with Prisma Client](https://www.prisma.io/docs/concepts/components/prisma-client/crud)
+- [Filtering and Sorting](https://www.prisma.io/docs/concepts/components/prisma-client/filtering-and-sorting)
+- [Pagination](https://www.prisma.io/docs/concepts/components/prisma-client/pagination)
+- [Aggregation, grouping, and summarizing](https://www.prisma.io/docs/concepts/components/prisma-client/aggregation-grouping-summarizing)
+- [Transactions and batch queries](https://www.prisma.io/docs/concepts/components/prisma-client/transactions)
+- [Raw database access](https://www.prisma.io/docs/concepts/components/prisma-client/raw-database-access)
+- [Prisma Studio](https://www.prisma.io/docs/concepts/components/prisma-studio)
+- [Team development with Prisma Migrate](https://www.prisma.io/docs/guides/migrate/developing-with-prisma-migrate/team-development)
